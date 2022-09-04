@@ -20,11 +20,11 @@ function App() {
         <Routes>
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Home />} />
-          <Route path="/about">
+          <Route path="about">
             <Route index element={<About />} />
             <Route path=":id" element={<About />} />
           </Route>
-          <Route path="/contact" element={<Contact />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
       </div>
     </BrowserRouter>
